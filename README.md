@@ -3,10 +3,10 @@
 Genderify Strings using this simple syntax:
 
 ```ruby
->> "About (him|her)".genderify(:f) 
+>> "About (him|her)".genderify :f
 => "About her"
 
->> "(He|She) recommended (his|her) own book".genderify(:m) 
+>> "(He|She) recommended (his|her) own book".genderify :m
 => "He recommended his own book"
 ```
 
@@ -14,8 +14,8 @@ You can also pass an object that responds to `gender` call, returning gender
 symbol ie :f (see full list in lib/genderify/string_ext.rb)
 
 ```ruby
->> "(He|She) favorited your post!".genderify(user)
-=> "She favorited your post!".
+>> "(He|She) favorited your post!".genderify user
+=> "She favorited your post!"
 ```
 
 ## Installation
