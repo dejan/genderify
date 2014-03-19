@@ -3,13 +3,14 @@
 String.class_eval do
 
   # Genderifies string. This is done by replacing every occurence of (x|y) 
-  # with either left (x) or right part (y) of it based on the gender provided as argument. 
-  # If argument of function is :f, 'f', :F, 'F', 1, '1', :female or 'female' it will pick 
-  # the right side. Anything else, including nil, will use the left side as replacement. 
-  # Hm, is this sexist? 
-  #
-  # Argument can also be an object that responds to 'gender' call. Returning value of such
-  # function will be applied to stated rules above.
+  # with either left - x or right part - y of it based on the gender provided as 
+  # an argument. 
+  # 
+  # The argument can either be gender symbol or an object that responds to `gender` 
+  # returning gender symbol. If gender symbol is :f, 'f', :F, 'F', 1, '1', 
+  # :female or 'female' String will be updated by replacing (x|y) with y.
+  # Any other value for gender symbol, including nil, will be interpreted as male 
+  # gender (sexist or what?) and therefore replace (x|y) with x. 
   #
   # Example: 
   #
