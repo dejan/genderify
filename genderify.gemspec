@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Genderify::VERSION
   spec.authors       = ["Dejan Simic"]
   spec.email         = ["desimic@gmail.com"]
-  spec.summary       = %q{TODO: Genderifies Strings.}
-  spec.description   = %q{TODO: Genderifies Strings.}
-  spec.homepage      = ""
+  spec.summary       = %q{Genderifies Strings.}
+  spec.description   = %q{Genderifies Strings.}
+  spec.homepage      = "https://github.com/dejan/genderify"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
