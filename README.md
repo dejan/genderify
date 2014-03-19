@@ -2,11 +2,13 @@
 
 Genderify Strings using this simple syntax:
 
-      >> "About (him|her)".genderify(:f) 
-      => "About her"
+```ruby
+>> "About (him|her)".genderify(:f) 
+=> "About her"
 
-      >> "(He|She) recommended (his|her) own book".genderify(:m) 
-      => "He recommended his own book"
+>> "(He|She) recommended (his|her) own book".genderify(:m) 
+=> "He recommended his own book"
+```
 
 ## Installation
 
