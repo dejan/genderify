@@ -10,6 +10,14 @@ Genderify Strings using this simple syntax:
 => "He recommended his own book"
 ```
 
+You can also pass an object that responds to `gender` call, returning gender 
+symbol ie :f (see full list in lib/genderify/string_ext.rb)
+
+```ruby
+>> "(He|She) favorited your post!".genderify(user)
+=> "She favorited your post!".
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
